@@ -2,7 +2,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     padding: 3rem 10rem;
     @include flex(row, flex-start, center);
     z-index: 100;
@@ -11,10 +11,11 @@
         font-size: 3.2rem;
         pointer-events: none;
         color: $primary-brand-color;
-        margin-right: 27rem;
+        margin-right: 10vw;
     }
 
     &__navigation {
+        
         &--link {
             text-decoration: none;
             color: $primary-brand-color;

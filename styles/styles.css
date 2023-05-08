@@ -23,6 +23,7 @@ html {
   font-size: 62.5%;
   width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 body {
@@ -33,7 +34,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   padding: 3rem 10rem;
   display: flex;
   flex-direction: row;
@@ -45,7 +46,7 @@ body {
   font-size: 3.2rem;
   pointer-events: none;
   color: hsl(169, 47%, 39%);
-  margin-right: 27rem;
+  margin-right: 10vw;
 }
 .header__navigation--link {
   text-decoration: none;
@@ -62,7 +63,8 @@ body {
 }
 
 .footer {
-  position: relative;
+  position: sticky;
+  bottom: 0;
   width: 100%;
   padding: 3rem 10rem 10rem;
   display: flex;
@@ -71,6 +73,7 @@ body {
   align-items: flex-start;
   z-index: 100;
   background-color: hsl(168, 100%, 10%);
+  overflow-y: hidden;
 }
 .footer__logo {
   font-size: 3.2rem;
@@ -94,6 +97,7 @@ body {
   align-items: center;
   transition: 0.5s linear;
   pointer-events: none;
+  overflow: hidden;
 }
 .parallax__title {
   position: absolute;
@@ -103,15 +107,22 @@ body {
 }
 .parallax img {
   position: absolute;
-  top: 0;
+  width: 100%;
+}
+.parallax img#hill3, .parallax img#hill4, .parallax img#hill5, .parallax img#plant, .parallax img#hill2, .parallax img#hill1, .parallax img#tree {
+  bottom: 0;
   left: 0;
+}
+.parallax img#leaf {
+  top: 0;
+  right: 0;
 }
 
 .content {
   position: relative;
   background-color: hsl(168, 100%, 10%);
   padding: 10rem;
-  margin-top: 8rem;
+  height: 100%;
 }
 .content__title {
   font-size: 4.8rem;

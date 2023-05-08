@@ -14,9 +14,7 @@ window.addEventListener('scroll', () => {
   leaf.style.left = `${value * 1.5}px`;
   hill5.style.left = `${value * 1.5}px`;
   hill4.style.left = `${value * -1.5}px`;
-//   hill3.style.left = `${value * .5}px`;
-//   hill3.style.top = `${value * .5}px`;
   hill2.style.left = `${value * -.5}px`;
-  hill2.style.top = `${value * .5}px`;
-  hill1.style.top = `${value * .5}px`;
+  hill2.style.bottom = `${value * -.5}px`;
+  hill1.style.bottom = `${value * -1.5}px`;
 });

@@ -4,7 +4,7 @@
 Parallax landing page from this tutorial [CSS Parallax Scrolling Website | How to Make Website using HTML CSS and Javascript](https://youtu.be/kmM6mqvnxcs)
 
 ## Demo
-View Demo: [here](https://moonlit-bubblegum-fba953.netlify.app/)
+View Demo: [here](https://singular-semolina-ce7a7c.netlify.app)
 
 ## Built with
 
