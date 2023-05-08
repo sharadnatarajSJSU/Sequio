@@ -14,7 +14,25 @@ window.addEventListener('scroll', () => {
   leaf.style.left = `${value * 1.5}px`;
   hill5.style.left = `${value * 1.5}px`;
   hill4.style.left = `${value * -1.5}px`;
-  hill2.style.left = `${value * -.5}px`;
-  hill2.style.bottom = `${value * -.5}px`;
+  hill2.style.left = `${value * -0.5}px`;
+  hill2.style.bottom = `${value * -0.5}px`;
   hill1.style.bottom = `${value * -1.5}px`;
 });
+
+window.addEventListener('scroll', reveal);
+
+function reveal() {
+  const revealer = document.querySelectorAll('.reveal');
+
+  for (let i of revealer) {
+    let windowheight = window.innerHeight;
+    let revealTop = i.getBoundingClientRect().top;
+
+    let revealPoint = 75;
+    if (revealTop < windowheight - revealPoint) {
+      i.classList.add('active');
+    } else {
+        i.classList.remove('active');  
+    }
+  }
+}

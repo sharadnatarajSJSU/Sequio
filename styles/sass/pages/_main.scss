@@ -2,7 +2,6 @@
     position: relative;
     height: 100vh;
     @include flex(row, center, center);
-    transition: .5s linear;
     pointer-events: none;
     overflow: hidden;
 
@@ -22,7 +21,8 @@
         &#hill5,
         &#plant,
         &#hill2,
-        &#hill1, &#tree {
+        &#hill1,
+        &#tree {
             bottom: 0;
             left: 0;
 
@@ -42,11 +42,11 @@
     background-color: $primary-brand-color-dark;
     padding: 10rem;
     height: 100%;
-    // margin-top: 8rem;
+    @include flex(column, center, center);
 
     &__title {
         font-size: 4.8rem;
-        margin-bottom: 1rem;
+        margin-bottom: 3rem;
         color: #fff;
     }
 
@@ -54,6 +54,6 @@
         font-size: 1.6rem;
         color: #fff;
         font-weight: 300;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     }
 }

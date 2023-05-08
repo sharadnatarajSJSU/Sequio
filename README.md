@@ -3,6 +3,9 @@
 
 Parallax landing page from this tutorial [CSS Parallax Scrolling Website | How to Make Website using HTML CSS and Javascript](https://youtu.be/kmM6mqvnxcs)
 
+
+Parallax landing On Scroll from this tutorial[Reveal Website Elements On Scroll | On Page Scroll Down - Using HTML, CSS & Javascript](https://youtu.be/VplDlwLTR50)
+
 ## Demo
 View Demo: [here](https://singular-semolina-ce7a7c.netlify.app)
 
