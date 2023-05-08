@@ -1,0 +1,22 @@
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 3rem 10rem 10rem;
+    @include flex(column, center, flex-start);
+    z-index: 100;
+    background-color: $primary-brand-color-dark;
+
+    &__logo {
+        font-size: 3.2rem;
+        pointer-events: none;
+        color: #fff;
+        margin-right: 27rem;
+    }
+
+    &__copy {
+        font-size: 1rem;
+        pointer-events: none;
+        color: #fff;
+        margin-right: 27rem;
+    }
+}

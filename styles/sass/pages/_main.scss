@@ -1,0 +1,40 @@
+.parallax {
+    position: relative;
+    height: 100vh;
+    @include flex(row, center, center);
+    transition: .5s linear;
+    pointer-events: none;
+
+    &__title {
+        position: absolute;
+        font-size: 5em;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.content {
+    position: relative;
+    background-color: $primary-brand-color-dark;
+    padding: 10rem;
+    margin-top: 8rem;
+
+    &__title {
+        font-size: 4.8rem;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        color: #fff;
+        font-weight: 300;
+        margin-bottom: 2rem;
+    }
+}
