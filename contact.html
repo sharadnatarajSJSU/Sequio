@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact Us</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./styles/contact.css'>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <h1 class="header__logo">SEQUIO CAT</h1> -->
+        <a href = "./index.html" id="./index" onclick = "document.location = this.id+'.html';return false;">
+			<div class="header__logo">
+				
+				<img src = "./assets\CAT.png" alt = "SEQUIO LOGO">
+			</div>
+        <nav class="header__navigation">
+            <a href="./index.html" class="header__navigation--link">Home</a>
+            <a href="./about.html" class="header__navigation--link">About</a>
+            <a href="./services.html" class="header__navigation--link">Services</a>
+            <a href="#" class="header__navigation--link" class="active">Contact</a>
+        </nav>
+    </header>
+   
+        <div class="formContainer">
+            <div class="wrapper">
+                <article id= "letterContainer" class="letter">
+                    <div class="side">
+                        <h1>Contact us</h1>
+                        <p>
+                            <textarea placeholder="Please enter your message here."></textarea>
+                        </p>
+                    </div>
+                    <div class="side">
+                        <p>
+                            <input type="text" placeholder="Your name">
+                        </p>
+                        <p>
+                            <input type="email" placeholder="Your email">
+                        </p>
+                        <p>
+                            <button id="sendLetter">Send Message</button>
+                        </p>
+                    </div>
+                </article>
+                <div class="envelope front"></div>
+                <div class="envelope back"></div>
+            </div>
+            <p class="result-message centered">Thank you for your message</p>
+        </div>
+    
+    <div class="footer">
+        <h3 class="footer__logo">SEQUIO CAT</h3>
+    </div>
+</body>
+<script src='./scripts/contact.js'></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>emailjs.init("hWdXto_Q9fms7O2ll");</script>
+
+</html>

@@ -3,86 +3,68 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible"
-          content="IE=edge">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <title>Parallax Scolling Website</title>
-    <link rel="stylesheet"
-          href="styles/styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sequio</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <h1 class="header__logo">Logo</h1>
+    
+	<header class="header">
+		<a href = "./index.html" id="./index" onclick = "document.location = this.id+'.html';return false;">
+			<div class="header__logo">
+				
+				<img src = "./assets\CAT.png" alt = "SEQUIO LOGO">
+			</div>
+        
         <nav class="header__navigation">
-            <a href="#"
-               class="header__navigation--link"
-               class="active">Home</a>
-            <a href="#"
-               class="header__navigation--link">About</a>
-            <a href="#"
-               class="header__navigation--link">Services</a>
-            <a href="#"
-               class="header__navigation--link">Contact</a>
+            <a href="./index.html" class="header__navigation--link" class="active">Home</a>
+            <a href="./about.html" class="header__navigation--link">About</a>
+            <a href="./services.html" class="header__navigation--link">Services</a>
+            <a href="./contact.html" class="header__navigation--link">Contact</a>
         </nav>
     </header>
     <main>
         <section class="parallax">
-            <img src="/assets/hill1.png"
-                 alt="hill"
-                 id="hill1">
-            <img src="/assets/hill2.png"
-                 alt="hill"
-                 id="hill2">
-            <img src="/assets/hill3.png"
-                 alt="hill"
-                 id="hill3">
-            <img src="/assets/hill4.png"
-                 alt="hill"
-                 id="hill4">
-           <img src="/assets/tree.png"
-                 alt="hill"
-                 id="tree">
-                  <h2 id="parallax-title"
-                class="parallax__title">Parallax Jungle</h2>
+            <img src=".\assets\hill1.png" alt="hill"
+                id="hill1">
+            <img src=".\assets\hill2.png" alt="hill"
+                id="hill2">
+            <img src=".\assets\hill3.png" alt="hill"
+                id="hill3">
+            <img src=".\assets\hill4.png" alt="hill"
+                id="hill4">
+            <img src=".\assets\tree.png" alt="hill"
+                id="tree">
+            <h2 id="parallax-title" class="parallax__title">SEQUIO</h2>
 
-            <img src="/assets/hill5.png"
-                 alt="hill"
-                 id="hill5">
-            
-            <img src="/assets/leaf.png"
-                 alt="hill"
-                 id="leaf">
-            <img src="/assets/plant.png"
-                 alt="hill"
-                 id="plant">
+            <img src=".\assets\hill5.png" alt="hill"
+                id="hill5">
+
+            <img src=".\assets\leaf.png" alt="hill"
+                id="leaf">
+            <img src=".\assets\plant.png" alt="hill"
+                id="plant">
         </section>
         <section class="content">
-            <h2 class="content__title reveal">Welcome to the Parallax Jungle</h2>
-            <p class="content__text reveal">Welcome to Parallax Jungle, where we take you on an immersive journey through the
-                world of parallax design! Our team of expert designers and developers specialize in creating visually
-                stunning and engaging websites that incorporate the latest parallax design techniques.
+            <h2 class="content__title reveal">SEQUIO</h2>
+            <p class="content__text reveal">In today's ever-evolving educational landscape, standardized tests serve as
+					gateways to a world of opportunities for students worldwide. These assessments
+					significantly influence access to higher education and future career prospects,
+					underscoring the critical role of test preparation. Sequio aims to lead an
+					educational revolution by harnessing the potential of Artificial Intelligence (AI) to
+					reshape the future of test preparation.
             </p>
-            <p class="content__text reveal">At Parallax Jungle, we believe that a website should not only be functional,
-            but also beautiful and captivating. Our team works closely with clients to understand their brand identity
-            and create custom designs that truly represent their unique vision. From subtle parallax effects to
-            full-blown animated scenes, our designs are sure to leave a lasting impression on your audience.
-            </p>
-            <p class="content__text reveal">We understand that creating a website can be a daunting task, but our team is here
-                to guide you through the process every step of the way. We believe that communication is key, and we
-                make sure to keep our clients informed throughout the design and development process. Our goal is to
-                create a website that not only meets your expectations but exceeds them.
-            </p>
-            <p class="content__text reveal">So, whether you're looking for a simple one-page website or a complex e-commerce
-                platform, Parallax Jungle has got you covered. Contact us today to start your journey to a stunning
-                parallax website!</p>
+            
         </section>
     </main>
     <footer class="footer">
-        <h3 class="footer__logo">Logo</h3>
-      <h4  class="footer__copy"> &copy; 2023</h4>
+        <h3 class="footer__logo">SEQUIO CAT</h3>
+        <!-- <h4  class="footer__copy"> &copy; 2023</h4> -->
     </footer>
 </body>
-<script src="/scripts/index.js" defer></script>
+<script src=".\scripts\index.js" defer></script>
+
 </html>

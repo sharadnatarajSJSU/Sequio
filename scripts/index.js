@@ -31,7 +31,8 @@ function reveal() {
     let revealPoint = 75;
     if (revealTop < windowheight - revealPoint) {
       i.classList.add('active');
-    } else {
+    } 
+    else {
         i.classList.remove('active');  
     }
   }
