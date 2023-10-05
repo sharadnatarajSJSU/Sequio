@@ -36,9 +36,9 @@ body {
 
 html {
   font-size: 62.5%;
-  width: 100vw;
-  min-height: 100vh;
-  overflow-x: hidden;
+  /* width: 100vw;
+  min-height: 100vh;*/
+  overflow-x: hidden; 
 }
 
 body {
@@ -50,12 +50,13 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  padding: 3rem 10rem;
+  padding: 0rem 1rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   z-index: 100;
+  
 }
 .header__logo {
   position : relative;
@@ -67,6 +68,7 @@ body {
   max-width: 50px;
   margin: 10px;
   float : left;
+  margin-right: 8rem;
 }
 
 .header__navigation--link {
@@ -102,7 +104,8 @@ body {
   font-size: 3.2rem;
   pointer-events: none;
   color: #fff;
-  margin-right: 27rem;
+  margin-right: 2rem;
+  margin-bottom:0;
 }
 .footer__copy {
   font-size: 1rem;
@@ -129,7 +132,7 @@ body {
 }
 .parallax img {
   position: absolute;
-  width: 100%;
+  width: 100vw;
 }
 .parallax img#hill3, .parallax img#hill4, .parallax img#hill5, .parallax img#plant, .parallax img#hill2, .parallax img#hill1, .parallax img#tree {
   bottom: 0;
@@ -161,5 +164,10 @@ body {
   font-weight: 300;
   margin-bottom: 5rem;
 }
-
+.contact-div{
+  color:white;
+}
+/* .test{
+  background-color:white;
+} */
 /*# sourceMappingURL=styles.css.map */
