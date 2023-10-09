@@ -4,71 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sequio</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    
-	<header class="header">
-		<a href = "./index.html" id="./index" onclick = "document.location = this.id+'.html';return false;">
-			<div class="header__logo">
-				<img src = "./assets\CAT.png" alt = "SEQUIO LOGO">
-			</div>
-        
-        <nav class="header__navigation">
-            <a href="./index.html" class="header__navigation--link" class="active">Home</a>
-            <a href="./investors.html" class="header__navigation--link">Investors</a>
-            <a href="./about.html" class="header__navigation--link">About</a>
-            
-            <a href="./contact.html" class="header__navigation--link">Contact</a>
-        </nav>
+
+    <header class="header">
+        <a href="./index.html" id="./index" onclick="document.location = this.id+'.html';return false;">
+            <div class="header__logo">
+                <img src="./assets\CAT.png" alt="SEQUIO LOGO">
+            </div>
+
+            <nav class="header__navigation">
+                <a href="./index.html" class="header__navigation--link" class="active">Home</a>
+                <a href="./investors.html" class="header__navigation--link">Investors</a>
+                <a href="./about.html" class="header__navigation--link">About</a>
+                <a href="./contact.html" class="header__navigation--link">Contact</a>
+            </nav>
+            <div id="mobile_navigation">
+                <div id="nav-vertical">
+                    <div id="menu_icon"><img src="./assets/menu_icon.png" onclick="view_menu()"></div>
+                    <a href="./index.html" class="mobile_nav hide_nav" class="active">Home</a>
+                    <a href="./investors.html" class="mobile_nav hide_nav">Investors</a>
+                    <a href="./about.html" class="mobile_nav hide_nav">About</a>
+                    <a href="./contact.html" class="mobile_nav hide_nav">Contact</a>
+                </div>
+            </div>
+
+
     </header>
     <main>
         <section class="parallax">
-            <img src=".\assets\hill1.png" alt="hill"
-                id="hill1">
-            <img src=".\assets\hill2.png" alt="hill"
-                id="hill2">
-            <img src=".\assets\hill3.png" alt="hill"
-                id="hill3">
-            <img src=".\assets\hill4.png" alt="hill"
-                id="hill4">
-            <img src=".\assets\tree.png" alt="hill"
-                id="tree">
+            <img src=".\assets\hill1.png" alt="hill" id="hill1">
+            <img src=".\assets\hill2.png" alt="hill" id="hill2">
+            <img src=".\assets\hill3.png" alt="hill" id="hill3">
+            <img src=".\assets\hill4.png" alt="hill" id="hill4">
+            <img src=".\assets\tree.png" alt="hill" id="tree">
             <h2 id="parallax-title" class="parallax__title">SEQUIO</h2>
-
-            <img src=".\assets\hill5.png" alt="hill"
-                id="hill5">
-
-            <img src=".\assets\leaf.png" alt="hill"
-                id="leaf">
-            <img src=".\assets\plant.png" alt="hill"
-                id="plant">
+            <img src=".\assets\hill5.png" alt="hill" id="hill5">
+            <img src=".\assets\leaf.png" alt="hill" id="leaf">
+            <img src=".\assets\plant.png" alt="hill" id="plant">
         </section>
         <section class="content">
             <h2 class="content__title reveal">SEQUIO</h2>
             <p class="content__text reveal">In today's ever-evolving educational landscape, standardized tests serve as
-					gateways to a world of opportunities for students worldwide. These assessments
-					significantly influence access to higher education and future career prospects,
-					underscoring the critical role of test preparation. Sequio aims to lead an
-					educational revolution by harnessing the potential of Artificial Intelligence (AI) to
-					reshape the future of test preparation.
+                gateways to a world of opportunities for students worldwide. These assessments
+                significantly influence access to higher education and future career prospects,
+                underscoring the critical role of test preparation. Sequio aims to lead an
+                educational revolution by harnessing the potential of Artificial Intelligence (AI) to
+                reshape the future of test preparation.
             </p>
-            
+
         </section>
     </main>
-    <footer class="footer">
-        <h3 class="footer__logo"><img src="./assets/CAT_WHITE.png" alt="SEQUIO LOGO" height="120px"></h3>
-        <!-- <h4  class="footer__copy"> &copy; 2023</h4> -->
-        <div class="contact-div">
-            <div class="contact">San Jose, CA</div>
-            <!-- <div class="contact">Phone</div> -->
-            <div class="contact">contactus@sequio.com</div>
+    <div class="footer">
+        <div id="logo_contact">
+            <div id="footer__logo">
+                <img src="./assets/CAT.png" alt="SEQUIO LOGO" height="120px">
+            </div>
+            <div class="contact-div">
+                <div class="contact">San Jose, CA</div>
+                <!-- <div class="contact">Phone</div> -->
+                <div class="contact">contactus@sequio.com</div>
+            </div>
         </div>
-    </footer>
+        <div id="nav_link_footer">
+            <nav class="footer__navigation">
+                <a href="./index.html" class="footer__navigation--link">Home</a>
+                <a href="./investors.html" class="footer__navigation--link">Investors</a>
+                <a href="./about.html" class="footer__navigation--link">About</a>
+                <a href="#" class="footer__navigation--link" class="active">Contact</a>
+            </nav>
+        </div>
+    </div>
 </body>
 <script src=".\scripts\index.js" defer></script>
 

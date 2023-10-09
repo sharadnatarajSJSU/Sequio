@@ -73,19 +73,73 @@ body {
     background: hsl(169, 47%, 39%);
     color: #fff;
   }
+  #nav-vertical{
+    display:flex;
+    margin-top:-2.2rem;
+    flex-direction:column;
+    position: absolute; 
+    background-color:white;
+    z-index:100000;
+    border-radius: 0.75rem;
 
+  }
+  .mobile_nav{
+    text-decoration: none;
+    positon:absolute;
+    color: hsl(169, 47%, 39%);
+    padding: 0.6rem 1.5rem;
+    margin: 0 2rem;
+    font-weight: 600;
+    font-size:2rem;
+  }
+  .hide_nav{
+    display:none;
+  }
+  .show_nav{
+    display:inline;
+  }
+  #mobile_navigation{
+    position : relative;
+    display: flex;
+    justify-content: right;
+    align-items: right-side;
+    float:right;
+  }
+  
+  #menu_icon{
+    /* float:right; */
+    /* right:0; */
+    /* width:0rem; */
+    /* margin-left:50rem; */
+    position : relative;
+    /* display: flex; */
+    justify-content: right;
+    align-items: right-side;
+    float:right;
+    display:none;
+    margin: 0 2rem;
+  }
+  
   .footer{
     padding-left:2rem;
     position: sticky;
     bottom:0;
     background-color:white;
     height: 10rem;
+    width:100%;
     display:flex;
     flex-direction: row;
   }
   .contact-div{
-    padding:3rem;
+    padding-right:5rem;
+    padding-left:3rem;
+    padding-top:3rem;
     flex-direction: column;
+  }
+
+  #logo_contact{
+    display:flex;
+    flex-direction:row;
   }
   .footer__logo{
   height: 20vh;
@@ -97,14 +151,17 @@ body {
   }
   .footer__navigation{
     padding-top: 4.4rem;
-    padding-left: 12rem;
-    float:right;  
+    padding-right: 12rem;
+    float:right;
+    width:100%;  
+    display:flex;
+    float:right;
   }
   .footer__navigation--link {
-    
     text-decoration: none;
     color: hsl(169, 47%, 39%);
-    padding: 0rem 0.5rem;
+    padding: 0rem 1.5rem;
+    width:100%;
     /* border-radius: 2rem; */
     /* margin: 0 1rem; */
     font-weight: 200;
@@ -113,3 +170,40 @@ body {
 #content{
     height:60rem;
 }
+
+@media screen and (max-width:641px) {
+  .header__navigation {
+      opacity: 0 !important;
+      pointer-events: none;
+  }
+  }
+
+@media screen and (max-width:641px) {
+  #menu_icon, #nav-vertical{
+      display: inline !important;
+  }
+  }
+  @media screen and (min-width:641px) {
+    #menu_icon, #nav-vertical{
+        display: none !important;
+    }
+    }
+@media screen and (max-width:641px) {
+  .footer{
+      flex-direction:column;
+      height:20rem;
+  }
+  }
+@media screen and (max-width:641px) {
+  .footer__navigation--link, #nav_link_footer{
+    justify-content:center;
+    align-items: center;
+    float:center;
+  }
+  }
+@media screen and (max-width:641px) {
+  .footer__navigation{
+    padding-top: 0rem; 
+    padding-right:1rem;
+  }
+  }
