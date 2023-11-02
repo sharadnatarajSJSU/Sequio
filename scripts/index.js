@@ -7,7 +7,7 @@ let hill4 = document.getElementById('hill4');
 let hill5 = document.getElementById('hill5');
 let menu_icon = document.getElementById('menu_icon');
 let mobile_nav = document.getElementsByClassName('mobile_nav');
-
+ 
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
 
