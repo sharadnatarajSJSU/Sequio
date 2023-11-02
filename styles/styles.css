@@ -346,3 +346,13 @@ display:flex;
       padding-right:1rem;
     }
     }
+    
+@media (max-width: 768px) {
+  /* Adjust the height for mobile devices */
+  .parallax {
+    height: 70vh;
+  }
+  .parallax img#hill3{
+    bottom:0px;
+  }
+}
