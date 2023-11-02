@@ -10,24 +10,34 @@
 </head>
 
 <body>
-    <header class="header">
-        <!-- <h1 class="header__logo">SEQUIO CAT</h1> -->
-        <a href = "./index.html" id="./index" onclick = "document.location = this.id+'.html';return false;">
-			<div class="header__logo">
-				
-				<img src = "./assets\CAT.png" alt = "SEQUIO LOGO">
-			</div>
-        <nav class="header__navigation">
-            <a href="./index.html" class="header__navigation--link">Home</a>
-            <a href="./about.html" class="header__navigation--link">About</a>
-            <a href="./services.html" class="header__navigation--link">Services</a>
-            <a href="#" class="header__navigation--link" class="active">Contact</a>
-        </nav>
-    </header>
-   
+    <div class="bodyDiv">
+        <header class="header">
+            <!-- <h1 class="header__logo">SEQUIO CAT</h1> -->
+            <!-- <a href="#" >SEQUIO CAT LOGO</a> -->
+            <a href="./index.html" id="./index" onclick="document.location = this.id+'.html';return false;">
+                <div class="header__logo">
+                    <img src="./assets/CAT.png" alt="SEQUIO LOGO">
+                </div>
+                <nav class="header__navigation">
+                    <a href="./index.html" class="header__navigation--link">Home</a>
+                    <a href="./investors.html" class="header__navigation--link">Investors</a>
+                    <a href="./about.html" class="header__navigation--link">About</a>
+                    <a href="./contact.html" class="header__navigation--link" class="active">Contact</a>
+                </nav>
+                <div id="mobile_navigation">
+                    <div id="nav-vertical">
+                        <div id="menu_icon"><img src="./assets/menu_icon.png" onclick="view_menu()"></div>
+                        <a href="./index.html" class="mobile_nav hide_nav" class="active">Home</a>
+                        <a href="./investors.html" class="mobile_nav hide_nav">Investors</a>
+                        <a href="./about.html" class="mobile_nav hide_nav">About</a>
+                        <a href="./contact.html" class="mobile_nav hide_nav">Contact</a>
+                    </div>
+                    </div>
+        </header>
+
         <div class="formContainer">
             <div class="wrapper">
-                <article id= "letterContainer" class="letter">
+                <article id="letterContainer" class="letter">
                     <div class="side">
                         <h1>Contact us</h1>
                         <p>
@@ -41,20 +51,40 @@
                         <p>
                             <input type="email" placeholder="Your email">
                         </p>
-                        <p>
-                            <button id="sendLetter">Send Message</button>
-                        </p>
                     </div>
+                    <p>
+                        <button id="sendLetter">Send Message</button>
+                    </p>
                 </article>
                 <div class="envelope front"></div>
                 <div class="envelope back"></div>
             </div>
-            <p class="result-message centered">Thank you for your message</p>
+            <div id="resultmessage">
+                <p class="result-message centered">Thank you for your message</p>
+            </div>
         </div>
-    
-    <div class="footer">
-        <h3 class="footer__logo">SEQUIO CAT</h3>
+        <div class="footer">
+            <div id="logo_contact">
+                <div id="footer__logo">
+                    <img src="./assets/CAT.png" alt="SEQUIO LOGO" height="120px">
+                </div>
+                <div class="contact-div">
+                    <div class="contact">San Jose, CA</div>
+                    <!-- <div class="contact">Phone</div> -->
+                    <div class="contact">contactus@sequio.com</div>
+                </div>
+            </div>
+            <div id="nav_link_footer">
+                <nav class="footer__navigation">
+                    <a href="./index.html" class="footer__navigation--link">Home</a>
+                    <a href="./investors.html" class="footer__navigation--link">Investors</a>
+                    <a href="./about.html" class="footer__navigation--link">About</a>
+                    <a href="#" class="footer__navigation--link" class="active">Contact</a>
+                </nav>
+            </div>
+        </div>
     </div>
+
 </body>
 <script src='./scripts/contact.js'></script>
 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
