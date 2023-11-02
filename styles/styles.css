@@ -252,6 +252,9 @@ display:flex;
   z-index:1000;
   right: 0;
 }
+.parallax img#hill3{
+  bottom:-140px;
+}
 
 .content {
   position: relative;
@@ -275,6 +278,28 @@ display:flex;
   color: #fff;
   font-weight: 300;
   margin-bottom: 5rem;
+}
+
+.mvp-redirect-button{
+  margin-top:20px;
+  background-color: white;
+  font-weight:600;
+  font-size:1.8rem;
+  opacity:80%;
+  color: hsl(168, 100%, 10%);
+  border: 1px solid hsl(168, 100%, 10%);
+  font-family: "Poppins", sans-serif;
+  text-rendering: optimizeLegibility;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-decoration:none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.mvp-redirect-button:hover {
+  background-color: hsl(168, 100%, 10%);
+  color: white;
+  text-decoration:none;
 }
 
 /* .contact-div{

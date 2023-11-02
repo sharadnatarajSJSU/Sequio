@@ -8,17 +8,30 @@ let hill5 = document.getElementById('hill5');
 let menu_icon = document.getElementById('menu_icon');
 let mobile_nav = document.getElementsByClassName('mobile_nav');
 
+// window.addEventListener('scroll', () => {
+//   let value = window.scrollY;
+
+//   text.style.marginTop = `${value * 2.5}px`;
+//   leaf.style.bottom = `${value * -1.5}px`;
+//   leaf.style.bottom = `${value * 1.5}px`;
+//   hill5.style.bottom = `${value * 1.5}px`;
+//   hill4.style.bottom = `${value * -1.5}px`;
+//   hill.style.bottom = `${value * -0.5}px`;
+//   hill2.style.bottom = `${value * -0.5}px`;
+//   hill1.style.bottom = `${value * -1.5}px`;
+// });
+
+
 window.addEventListener('scroll', () => {
   let value = window.scrollY;
 
   text.style.marginTop = `${value * 2.5}px`;
-  leaf.style.top = `${value * -1.5}px`;
-  leaf.style.left = `${value * 1.5}px`;
-  hill5.style.left = `${value * 1.5}px`;
-  hill4.style.left = `${value * -1.5}px`;
-  hill2.style.left = `${value * -0.5}px`;
+  // leaf.style.bottom = `${value * 1.5}px`;
+  // hill5.style.bottom = `${value * 1.5}px`;
+  hill4.style.bottom = `${value * -0.5}px`;
+  // hill3.style.bottom = `${value * 0.5}px`;
   hill2.style.bottom = `${value * -0.5}px`;
-  hill1.style.bottom = `${value * -1.5}px`;
+  hill1.style.bottom = `${value * -0.7}px`;
 });
 
 
